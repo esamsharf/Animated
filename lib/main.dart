@@ -1,3 +1,4 @@
+import 'package:animated/screens/onboding/onboding_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,18 +15,20 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'The Flutter Way',
       theme: ThemeData(
-          scaffoldBackgroundColor: Color(0xFFEEF1F8),
-          primarySwatch: Colors.blue,
-          fontFamily: "Intel",
-          inputDecorationTheme: const InputDecorationTheme(
-            filled: true,
-            fillColor: Colors.white,
-            errorStyle: TextStyle(height: 0),
-            border: defaultInputBorder,
-            enabledBorder: defaultInputBorder,
-            focusedBorder: defaultInputBorder,
-            errorBorder: defaultInputBorder,
-          )),
+        scaffoldBackgroundColor: Color(0xFFEEF1F8),
+        primarySwatch: Colors.blue,
+        fontFamily: "Intel",
+        inputDecorationTheme: const InputDecorationTheme(
+          filled: true,
+          fillColor: Colors.white,
+          errorStyle: TextStyle(height: 0),
+          border: defaultInputBorder,
+          enabledBorder: defaultInputBorder,
+          focusedBorder: defaultInputBorder,
+          errorBorder: defaultInputBorder,
+        ),
+      ),
+      home: const OnbodingScreen(),
     );
   }
 }
